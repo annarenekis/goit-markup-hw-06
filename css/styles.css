@@ -682,6 +682,11 @@ ul {
 .checkbox-input:checked + .checkbox-icon {
   background-color: var(--accent-color);
   outline: none;
+  background-image: url(../img/svg/icon-check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
 }
 .checkbox-icon:hover,
 .checkbox-icon:focus {
