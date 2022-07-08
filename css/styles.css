@@ -96,8 +96,8 @@ img,
 }
 .nav-item:hover,
 .nav-item:focus,
-.footer-item:hover,
-.footer-item:focus,
+.footer-item.hover:hover,
+.footer-item.hover:focus,
 .social-media-footer:hover,
 .social-media-footer:focus,
 .word-web {
