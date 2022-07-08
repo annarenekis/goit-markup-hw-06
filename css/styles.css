@@ -713,8 +713,10 @@ ul {
   resize: none;
 }
 .fields {
-  padding: 12px;
-  height: 40px;
+  padding-top: 12px;
+  padding-left: 42px;
+  padding-bottom: 12px;
+  outline: transparent;
 }
 .block-input-form {
   position: relative;
@@ -729,11 +731,15 @@ ul {
   left: 12px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.feedback {
+  outline: transparent;
+}
 .fields,
 .feedback {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-list > .list,
 .list > .fields-title {
@@ -793,5 +799,5 @@ ul {
 .feedback:focus,
 .footer-input:hover,
 .footer-input:focus {
-  border: 1px solid var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
