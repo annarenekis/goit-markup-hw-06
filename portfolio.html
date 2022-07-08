@@ -344,7 +344,7 @@
         </div>
         <div class="footer-right">
           <p class="text footer-text">присоединяйтесь</p>
-          <ul class="list social-media-list-footer">
+          <ul class="list social-media">
             <li class="social-media-list social-media-footer">
               <a href="/" class="link sites-icon-link">
                 <svg class="icon-social-media icon-social-media-footer">
@@ -374,6 +374,27 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- footer form -->
+        <div class="footer-form">
+          <form name="subscription">
+            <p class="text footer-text">Подпишитесь на рассылку</p>
+            <label for="email"></label>
+            <div class="div-form">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button subscription-button">
+                <span class="subscription-text">Подписаться</span>
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./img/sprites.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

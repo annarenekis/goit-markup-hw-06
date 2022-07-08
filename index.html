@@ -472,8 +472,32 @@
             </li>
           </ul>
         </div>
+        <!-- footer form -->
+
+        <div class="footer-form">
+          <form name="subscription">
+            <p class="text footer-text">Подпишитесь на рассылку</p>
+            <label for="email"></label>
+            <div class="div-form">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button subscription-button">
+                <span class="subscription-text">Подписаться</span>
+                <svg class="subscription-icon" width="24" height="24">
+                  <use href="./img/sprites.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
@@ -481,6 +505,74 @@
             <use href="./img/sprites.svg#close-btn"></use>
           </svg>
         </button>
+        <form name="contact-form" autocomplete="off">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <ul class="form-list">
+            <li class="list">
+              <label class="fields-title label" for="name"> Имя </label>
+              <span class="block-input-form">
+                <input class="fields" type="name" name="name" id="name" />
+                <svg class="icon-input" width="18" height="18">
+                  <use href="./img/sprites.svg#icon-form1"></use>
+                </svg>
+              </span>
+            </li>
+
+            <li class="list">
+              <label class="fields-title label" for="tel"> Телефон </label>
+              <span class="block-input-form">
+                <input class="fields" type="tel" name="tel" id="tel" />
+                <svg class="icon-input" width="18" height="18">
+                  <use href="./img/sprites.svg#icon-form2"></use>
+                </svg>
+              </span>
+            </li>
+
+            <li class="list">
+              <label class="fields-title label" for="email"> Почта </label>
+              <span class="block-input-form">
+                <input class="fields" type="email" name="email" id="email" />
+                <svg class="icon-input" width="18" height="18">
+                  <use href="./img/sprites.svg#icon-form3"></use>
+                </svg>
+              </span>
+            </li>
+
+            <li class="list">
+              <label class="fields-title label"> Комментарий </label>
+              <textarea
+                class="feedback"
+                name="feedback"
+                rows="5"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="form-end">
+            <div class="checkbox">
+              <label class="checkbox-text label"
+                ><input
+                  class="visually-hidden checkbox-input"
+                  type="checkbox"
+                  name="terms"
+                />
+                <span class="checkbox-icon">
+                  <svg class="checkbox-svg" width="16px" height="15px">
+                    <use href="./img/sprites.svg#icon-checkbox"></use>
+                  </svg> </span
+                >Соглашаюсь с рассылкой и принимаю<a href="" class="terms-link"
+                  >Условия договора</a
+                ></label
+              >
+            </div>
+
+            <label class="modal-button" for="">
+              <button type="submit" class="submit-button button">
+                Отправить
+              </button>
+            </label>
+          </div>
+        </form>
       </div>
     </div>
 
